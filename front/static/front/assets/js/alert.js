@@ -1,3 +1,11 @@
 htmx.on('htmx:responseError', function(evt) {
-    console.log("salur franck")
+    Swal.fire({
+        icon: 'error',
+        title: "Echec de la demande",
+        text: evt.detail.xhr.responseText,
+        showConfirmButton: false,
+        timer: 5000
+    })
 });
+
+
