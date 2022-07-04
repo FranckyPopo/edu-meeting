@@ -1,8 +1,13 @@
 from django.db import models
+
 from phonenumber_field.modelfields import PhoneNumberField
 
+
 class WelcomeText(models.Model):
-    mini_title = models.CharField(max_length=150, error_messages={"invalid": "tu et bête comment entre un caratére laba"})
+    mini_title = models.CharField(
+        max_length=150, 
+        error_messages={"invalid": "tu et bête comment entre un caratére laba"}
+    )
     main_title = models.CharField(max_length=150)
     description = models.TextField()
     link = models.URLField()
