@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "front",
     "features",
+    "phonenumber_field",
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'Django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_Host = 'smtp.gmail.com'
+EMAIL_Host_USER = 'afrifranck2003@gmail.com'
+EMAIL_Host_PASSWORD = ''
+EMAIL_PORT = 587

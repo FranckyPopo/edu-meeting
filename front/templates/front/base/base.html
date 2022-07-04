@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{% static 'front/assets/css/owl.css' %}">
     <link rel="stylesheet" href="{% static 'front/assets/css/lightbox.css' %}">
     <script src="https://unpkg.com/htmx.org@1.7.0"></script>
+    
   </head>
 <body>
   <!-- ***** Header Area Start ***** -->
@@ -66,17 +67,20 @@
   
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
-      <script src="{% static "front/vendor/jquery/jquery.min.js" %}"></script>
-      <script src="{% static "front/vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
-  
-      <script src="{% static "front/assets/js/isotope.min.js" %}"></script>
-      <script src="{% static "front/assets/js/owl-carousel.js" %}"></script>
-      <script src="{% static "front/assets/js/lightbox.js" %}"></script>
-      <script src="{% static "front/assets/js/tabs.js" %}"></script>
-      <script src="{% static "front/assets/js/video.js" %}"></script>
-      <script src="{% static "front/assets/js/slick-slider.js" %}"></script>
-      <script src="{% static "front/assets/js/custom.js" %}"></script>
-      <script src="{% static "front/assets/js/alert.js" %}"></script>
+    <script src="{% static 'front/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'front/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'front/assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'front/assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'front/assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'front/assets/js/tabs.js' %}"></script>
+    <script src="{% static 'front/assets/js/video.js' %}"></script>
+    <script src="{% static 'front/assets/js/slick-slider.js' %}"></script>
+    <script src="{% static 'front/assets/js/custom.js' %}"></script>
+
+      <!-- Sweet alert -->
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
       <script>
           //according to loftblog tut
           $('.nav li:first').addClass('active');
@@ -123,7 +127,7 @@
             checkSection();
           });
       </script>
-      
+
   </body>
   
   </html>

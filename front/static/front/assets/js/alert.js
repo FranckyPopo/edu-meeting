@@ -8,7 +8,7 @@ htmx.on('htmx:responseError', function(evt) {
     })
 });
 
-htmx.on("ContactSuccess", function(evt) {
+htmx.on("ContactSuccess", function() {
     Swal.fire({
         icon: 'success',
         title: "Demande réussite",
