@@ -8,4 +8,14 @@ htmx.on('htmx:responseError', function(evt) {
     })
 });
 
+htmx.on("ContactSuccess", function(evt) {
+    Swal.fire({
+        icon: 'success',
+        title: "Demande réussite",
+        text: "Vôtre demande a bien été envoyé",
+        showConfirmButton: false,
+        timer: 3000
+    })
+});
+
 

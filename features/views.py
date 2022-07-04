@@ -30,7 +30,7 @@ class FeaturesContactView(View):
             and re.fullmatch(regex, email)
         ):
             ContactUs.objects.create(name=name, subject=subject, email=email, message=message)
-            return HttpResponse("", status=201)
+            return HttpResponse("", status=201, headers={"HX-Trigger": "ContactSuccess"})
         return HttpResponse(
             "Imposible de donner suite a vôtre requête, veuiller vérifier les données saisi", 
             status=405
